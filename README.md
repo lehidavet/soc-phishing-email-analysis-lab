@@ -1,5 +1,4 @@
-# 🔎 Análise de e-mail de phishing simulado (Lab SOC/Blue Team – Gmail)
-# 🔎 Simulated Phishing Email Analysis (SOC/Blue Team Lab – Gmail)
+# 🔎 Análise de e-mail de phishing simulado (Lab SOC/Blue Team – Gmail) | Simulated Phishing Email Analysis (SOC/Blue Team Lab – Gmail)
 
 ![Status](https://img.shields.io/badge/status-completed-brightgreen)
 ![Focus](https://img.shields.io/badge/focus-SOC%20%2F%20Blue%20Team-blue)
