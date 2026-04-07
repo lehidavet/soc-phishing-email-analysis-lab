@@ -8,7 +8,7 @@
 
 ---
 
-(PT-BR) :brazil:
+🇧🇷:
 
 ## 🧾 Objetivo do lab 
 
@@ -71,7 +71,7 @@ Se este e-mail tivesse sido identificado em um ambiente produtivo, ações recom
 
 ---
 
-(EN) :us:
+🇺🇸:
 
 ## 🧾 Lab objective 
 
@@ -136,8 +136,8 @@ If this email had been detected in a production environment, recommended actions
 
 ## ⚠️ Aviso importante / Important disclaimer
 
-**PT-BR:**  
+**🇧🇷:**  
 Todas as atividades deste lab foram realizadas em ambiente controlado, utilizando apenas contas de e-mail de teste sob meu controle. Nenhum usuário real, cliente ou sistema de produção foi envolvido. O conteúdo do e-mail e os domínios utilizados são exclusivamente para fins educacionais.
 
-**EN:**  
+**🇺🇸:**  
 All activities in this lab were performed in a controlled environment using only test email accounts under my control. No real users, customers or production systems were involved. The email content and domains used are for educational purposes only.
