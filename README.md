@@ -8,6 +8,10 @@
 
 ---
 
+## Practical SOC/Blue Team lab focused on phishing email analysis using Gmail test headers and incident-style documentation.
+
+---
+
 🇧🇷:
 
 ## 🧾 Objetivo do lab 
@@ -126,7 +130,7 @@ If this email had been detected in a production environment, recommended actions
 - Creating or tuning email security rules to detect similar combinations of subject, sender and URL patterns.  
 - If any user had clicked the link, enforcing password reset and reviewing recent account activity.
 
-  ## 🧠 What I learned
+- ## 🧠 What I learned
 
 - How to extract and interpret full email headers in Gmail, focusing on real sender, domain, subject and authentication results.  
 - How to identify common phishing signs in password reset emails, combining technical and content-based analysis.  
