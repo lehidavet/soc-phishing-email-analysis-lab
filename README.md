@@ -47,7 +47,7 @@ Principais pontos analisados no cabeçalho e conteúdo do e-mail:
 
 ![Informações do remetente do e-mail](./images/show-original-infos.png)
 
-![Autorizações do servidor](./images/show-original-auth.png)
+![Autenticações do servidor](./images/show-original-auth.png)
 
 ## 🔍 Análise (perspectiva SOC)
 
@@ -110,7 +110,7 @@ Key points analyzed in the email header and body:
 
 ![Information of the e-mail origin](./images/show-original-infos.png)
 
-![Server authorizations](./images/show-original-auth.png)
+![Server authentications](./images/show-original-auth.png)
 
 ## 🔍 Analysis (SOC perspective)
 
