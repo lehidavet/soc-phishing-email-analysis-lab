@@ -28,8 +28,8 @@ O foco é praticar a extração de cabeçalho, identificação de indicadores de
 
 - Tipo de e-mail: mensagem de redefinição de senha com tom urgente.  
 - Assunto (exemplo): `Urgent: Password Reset Required for Your Account`.  
-- Corpo: texto informando suposta atividade suspeita, ameaça de bloqueio definitivo da conta em 24 horas e instrução para clicar em um link genérico de “Reset your password now”.  
-- Link principal: `http://secureid-support.com/reset` (domínio fictício, usado apenas para fins educacionais – não clicar).
+- Corpo: texto informando suposta atividade suspeita, ameaça de bloqueio definitivo da conta em 24 horas e instrução para clicar em um link genérico de **“Reset your password now”**.  
+- Link principal: `http://secureid-support.com/reset` (domínio fictício, usado apenas para fins educacionais – **não clicar**).
 
 ![Conteúdo do e-mail](./images/show-original.png)
 
@@ -37,11 +37,11 @@ O foco é praticar a extração de cabeçalho, identificação de indicadores de
 
 Principais pontos analisados no cabeçalho e conteúdo do e-mail:
 
-- Nome exibido do remetente (display name) diferente de um serviço claramente reconhecível.  
-- Endereço real de e-mail de origem não associado a um domínio corporativo ou provedor legítimo de “SecureID”.  
+- Nome exibido do remetente (**display name**) diferente de um serviço claramente reconhecível.  
+- Endereço real de e-mail de origem não associado a um domínio corporativo ou provedor legítimo de **“SecureID”**.  
 - Domínio do link de redefinição de senha diferente de domínios típicos de provedores de identidade ou do próprio Gmail.  
-- Linguagem com forte senso de urgência (“permanentemente bloqueada”, “24 hours”) e ameaça de perda de acesso.  
-- Ausência de informações personalizadas do usuário (nome, dados específicos), mensagem genérica.
+- Linguagem com forte senso de urgência (*“permanentemente bloqueada”, “24 hours”*) e ameaça de perda de acesso.  
+- Ausência de informações personalizadas do usuário (**nome, dados específicos**), mensagem genérica.
 
 ![Header do Mostrar Original](./images/show-original-header.png)
 
@@ -91,8 +91,8 @@ The goal is to practice header extraction, phishing indicator identification, ri
 
 - Email type: urgent password reset notification.  
 - Subject (example): `Urgent: Password Reset Required for Your Account`.  
-- Body: message claiming suspicious activity, warning about potential permanent account lock within 24 hours and asking the user to click a generic “Reset your password now” link.  
-- Main link: `http://secureid-support.com/reset` (fictional domain, for training purposes only – do not click).
+- Body: message claiming suspicious activity, warning about potential permanent account lock within 24 hours and asking the user to click a generic **“Reset your password now”** link.  
+- Main link: `http://secureid-support.com/reset` (fictional domain, for training purposes only – **do not click**).
 
 ![E-mail content](./images/show-original.png)
 
@@ -100,11 +100,11 @@ The goal is to practice header extraction, phishing indicator identification, ri
 
 Key points analyzed in the email header and body:
 
-- Sender display name not clearly tied to a well-known legitimate service.  
-- Actual sender email address not belonging to a corporate domain or a recognized identity provider for “SecureID”.  
+- Sender **display name** not clearly tied to a well-known legitimate service.  
+- Actual sender email address not belonging to a corporate domain or a recognized identity provider for **“SecureID”**.  
 - Password reset link domain different from typical identity provider or Gmail domains.  
-- Strong sense of urgency in the wording (“permanently locked”, “24 hours”) and threat of account loss.  
-- No personalized user information (name or specific data), generic messaging.
+- Strong sense of urgency in the wording (*“permanently locked”, “24 hours”*) and threat of account loss.  
+- No personalized user information (**name or specific data**), generic messaging.
 
 ![Header of Show Original](./images/show-original-header.png)
 
