@@ -1,5 +1,5 @@
-# Análise de e-mail de phishing simulado (Lab SOC/Blue Team – Gmail)
-# Simulated Phishing Email Analysis (SOC/Blue Team Lab – Gmail)
+# 🔎 Análise de e-mail de phishing simulado (Lab SOC/Blue Team – Gmail)
+# 🔎 Simulated Phishing Email Analysis (SOC/Blue Team Lab – Gmail)
 
 ![Status](https://img.shields.io/badge/status-completed-brightgreen)
 ![Focus](https://img.shields.io/badge/focus-SOC%20%2F%20Blue%20Team-blue)
@@ -8,7 +8,7 @@
 
 ---
 
-(PT-BR)
+(PT-BR) :brazil:
 
 ## 🧾 Objetivo do lab 
 
@@ -22,7 +22,7 @@ O foco é praticar a extração de cabeçalho, identificação de indicadores de
 - Origem: conta de e-mail controlada pelo analista, usada apenas para envio do e-mail simulado.  
 - Contexto: cenário 100% controlado, sem envolvimento de usuários reais, clientes ou ambientes de produção.
 
-![Caixa de entrada Gmail]()
+![Caixa de entrada Gmail](./images/inbox.png)
 
 ## ✉️ Descrição do e-mail simulado
 
@@ -31,7 +31,7 @@ O foco é praticar a extração de cabeçalho, identificação de indicadores de
 - Corpo: texto informando suposta atividade suspeita, ameaça de bloqueio definitivo da conta em 24 horas e instrução para clicar em um link genérico de “Reset your password now”.  
 - Link principal: `http://secureid-support.com/reset` (domínio fictício, usado apenas para fins educacionais – não clicar).
 
-![]
+![Conteúdo do e-mail](./images/show-original.png)
 
 ## 🧩 Indicadores observados
 
@@ -42,6 +42,12 @@ Principais pontos analisados no cabeçalho e conteúdo do e-mail:
 - Domínio do link de redefinição de senha diferente de domínios típicos de provedores de identidade ou do próprio Gmail.  
 - Linguagem com forte senso de urgência (“permanentemente bloqueada”, “24 hours”) e ameaça de perda de acesso.  
 - Ausência de informações personalizadas do usuário (nome, dados específicos), mensagem genérica.
+
+![Header do Mostrar Original](./images/show-original-header.png)
+
+![Informações do remetente do e-mail](./images/show-original-infos.png)
+
+![Autorizações do servidor](./images/show-original-auth.png)
 
 ## 🔍 Análise (perspectiva SOC)
 
@@ -65,7 +71,7 @@ Se este e-mail tivesse sido identificado em um ambiente produtivo, ações recom
 
 ---
 
-(EN)
+(EN) :us:
 
 ## 🧾 Lab objective 
 
@@ -79,12 +85,16 @@ The goal is to practice header extraction, phishing indicator identification, ri
 - Source: email account controlled by the analyst, used only to send the simulated message.  
 - Context: fully controlled lab scenario, with no real users, customers or production systems involved.
 
+![Inbox Gmail](./images/inbox.png)
+
 ## ✉️ Simulated email description
 
 - Email type: urgent password reset notification.  
 - Subject (example): `Urgent: Password Reset Required for Your Account`.  
 - Body: message claiming suspicious activity, warning about potential permanent account lock within 24 hours and asking the user to click a generic “Reset your password now” link.  
 - Main link: `http://secureid-support.com/reset` (fictional domain, for training purposes only – do not click).
+
+![E-mail content](./images/show-original.png)
 
 ## 🧩 Indicators observed
 
@@ -95,6 +105,12 @@ Key points analyzed in the email header and body:
 - Password reset link domain different from typical identity provider or Gmail domains.  
 - Strong sense of urgency in the wording (“permanently locked”, “24 hours”) and threat of account loss.  
 - No personalized user information (name or specific data), generic messaging.
+
+![Header of Show Original](./images/show-original-header.png)
+
+![Information of the e-mail origin](./images/show-original-infos.png)
+
+![Server authorizations](./images/show-original-auth.png)
 
 ## 🔍 Analysis (SOC perspective)
 
