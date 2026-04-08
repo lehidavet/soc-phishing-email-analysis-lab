@@ -66,6 +66,11 @@ Se este e-mail tivesse sido identificado em um ambiente produtivo, ações recom
 - Criar ou ajustar regras de segurança de e-mail para detectar padrões semelhantes de assunto, remetente e URL.  
 - Caso algum usuário tenha clicado, aplicar redefinição de senha e revisar atividade recente da conta.
 
+## 🌐 Perspectiva de rede
+
+- Embora neste lab o foco esteja na análise do e-mail em si, em um cenário real de phishing é importante entender o que aconteceria na rede caso o usuário clicasse no link malicioso.
+- Ao clicar no link de redefinição de senha, o cliente do usuário (navegador) primeiro faria uma consulta **DNS** para resolver o domínio (por exemplo, `secureid-support.com`) em um endereço IP, normalmente usando a porta **53/UDP**. Em seguida, o navegador iniciaria uma conexão **HTTP ou HTTPS** com o servidor de destino, geralmente nas portas **80/TCP** (HTTP) ou **443/TCP** (HTTPS), enviando uma requisição que poderia ser registrada em logs de proxy, firewall ou servidor web. Esses registros de DNS e HTTP/HTTPS seriam valiosos para um analista SOC correlacionar cliques em links de phishing com possíveis páginas de captura de credenciais ou download de malware.
+
 ## 🧠 O que aprendi
 
 - A extrair e interpretar o cabeçalho completo de um e-mail no Gmail, observando remetente real, domínio, subject e resultados de autenticação.  
@@ -129,7 +134,12 @@ If this email had been detected in a production environment, recommended actions
 - Creating or tuning email security rules to detect similar combinations of subject, sender and URL patterns.  
 - If any user had clicked the link, enforcing password reset and reviewing recent account activity.
 
-- ## 🧠 What I learned
+## 🌐 Networking perspective
+
+- Although this lab focuses mainly on analyzing the email itself, in a real phishing scenario it is important to understand what would happen on the network if the user clicked the malicious link.
+- When the user clicks the password reset link, the client (browser) would first perform a **DNS** lookup to resolve the domain (for example, `secureid-support.com`) to an IP address, typically using port **53/UDP**. Then, the browser would initiate an **HTTP or HTTPS** connection to the target server, usually over **80/TCP** (HTTP) or **443/TCP** (HTTPS), sending a request that could be recorded in proxy, firewall or web server logs. These DNS and HTTP/HTTPS records would be valuable for a SOC analyst to correlate phishing link clicks with potential credential harvesting pages or malware downloads.
+
+## 🧠 What I learned
 
 - How to extract and interpret full email headers in Gmail, focusing on real sender, domain, subject and authentication results.  
 - How to identify common phishing signs in password reset emails, combining technical and content-based analysis.  
