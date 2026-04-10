@@ -66,6 +66,12 @@ Se este e-mail tivesse sido identificado em um ambiente produtivo, ações recom
 - Criar ou ajustar regras de segurança de e-mail para detectar padrões semelhantes de assunto, remetente e URL.  
 - Caso algum usuário tenha clicado, aplicar redefinição de senha e revisar atividade recente da conta.
 
+## 🔎 Enriquecimento com VirusTotal
+
+Em um ambiente de SOC real, após identificar um possível e-mail de phishing, o próximo passo natural seria enriquecer os indicadores coletados (principalmente domínio e URL) utilizando uma ferramenta como o **VirusTotal**.  
+O fluxo típico seria: copiar o domínio ou a URL principal do e-mail e consultá-los no VirusTotal para verificar se já foram reportados como maliciosos ou suspeitos por diferentes mecanismos de detecção, além de observar histórico de detecção, categorias atribuídas (ex.: phishing, malware hosting) e possíveis relações com outros IoCs.  
+Esse tipo de enriquecimento ajudaria a fortalecer a classificação do incidente (por exemplo, confirmar que se trata de phishing conhecido) e a embasar recomendações de bloqueio de domínio/URL em proxies, firewalls ou ferramentas de e-mail security.
+
 ## 🌐 Perspectiva de rede
 
 - Embora neste lab o foco esteja na análise do e-mail em si, em um cenário real de phishing é importante entender o que aconteceria na rede caso o usuário clicasse no link malicioso.
@@ -133,6 +139,12 @@ If this email had been detected in a production environment, recommended actions
 - Notifying the targeted user not to click any links or enter credentials, reinforcing security awareness.  
 - Creating or tuning email security rules to detect similar combinations of subject, sender and URL patterns.  
 - If any user had clicked the link, enforcing password reset and reviewing recent account activity.
+
+## 🔎 Enrichment with VirusTotal (EN)
+
+In a real SOC environment, after identifying a potential phishing email, a natural next step would be to enrich the collected indicators (mainly domain and URL) using a tool like **VirusTotal**.  
+The typical workflow would be to copy the main domain or URL from the email and look it up in VirusTotal to check whether it has already been reported as malicious or suspicious by multiple detection engines, as well as to review detection history, assigned categories (e.g., phishing, malware hosting) and relationships with other IoCs.  
+This enrichment helps strengthen the incident classification (for example, confirming that it is a known phishing campaign) and supports recommendations to block the domain/URL at proxies, firewalls or email security gateways.
 
 ## 🌐 Networking perspective
 
