@@ -68,9 +68,14 @@ Se este e-mail tivesse sido identificado em um ambiente produtivo, ações recom
 
 ## 🔎 Enriquecimento com VirusTotal
 
-Em um ambiente de SOC real, após identificar um possível e-mail de phishing, o próximo passo natural seria enriquecer os indicadores coletados (principalmente domínio e URL) utilizando uma ferramenta como o **VirusTotal**.  
-O fluxo típico seria: copiar o domínio ou a URL principal do e-mail e consultá-los no VirusTotal para verificar se já foram reportados como maliciosos ou suspeitos por diferentes mecanismos de detecção, além de observar histórico de detecção, categorias atribuídas (ex.: phishing, malware hosting) e possíveis relações com outros IoCs.  
-Esse tipo de enriquecimento ajudaria a fortalecer a classificação do incidente (por exemplo, confirmar que se trata de phishing conhecido) e a embasar recomendações de bloqueio de domínio/URL em proxies, firewalls ou ferramentas de e-mail security.
+- Em um ambiente de SOC real, após identificar um possível e-mail de phishing, o próximo passo natural seria enriquecer os indicadores coletados (principalmente domínio e URL) utilizando uma ferramenta como o **VirusTotal**.
+- O fluxo típico seria: copiar o domínio ou a URL principal do e-mail e consultá-los no VirusTotal para verificar se já foram reportados como maliciosos ou suspeitos por diferentes mecanismos de detecção, além de observar histórico de detecção, categorias atribuídas (ex.: phishing, malware hosting) e possíveis relações com outros IoCs.  
+- Esse tipo de enriquecimento ajudaria a fortalecer a classificação do incidente (por exemplo, confirmar que se trata de phishing conhecido) e a embasar recomendações de bloqueio de domínio/URL em proxies, firewalls ou ferramentas de e-mail security.
+
+- Durante a análise, a URL `http://secureid-support.com/reset` foi consultada no VirusTotal. No momento da verificação, **61 mecanismos de detecção classificaram a URL como “clean” e 34 não possuíam avaliação (unrated)**, sem registros públicos de classificação como maliciosa ou de phishing.
+- Mesmo assim, em contexto de SOC, o e-mail continuaria sendo tratado como suspeito, pois a ausência de detecção em feeds públicos não elimina o risco: o conteúdo ainda apresenta sinais típicos de phishing (linguagem urgente, ameaça de bloqueio de conta e link genérico de redefinição de senha para um domínio pouco conhecido). Nesse caso, o analista usa o VirusTotal como mais uma fonte de evidência, mas mantém a decisão apoiada principalmente na análise de contexto e de engenharia social.
+
+![Resultado VirusTotal](.images/vt-result.png)
 
 ## 🌐 Perspectiva de rede
 
@@ -142,9 +147,14 @@ If this email had been detected in a production environment, recommended actions
 
 ## 🔎 Enrichment with VirusTotal (EN)
 
-In a real SOC environment, after identifying a potential phishing email, a natural next step would be to enrich the collected indicators (mainly domain and URL) using a tool like **VirusTotal**.  
-The typical workflow would be to copy the main domain or URL from the email and look it up in VirusTotal to check whether it has already been reported as malicious or suspicious by multiple detection engines, as well as to review detection history, assigned categories (e.g., phishing, malware hosting) and relationships with other IoCs.  
-This enrichment helps strengthen the incident classification (for example, confirming that it is a known phishing campaign) and supports recommendations to block the domain/URL at proxies, firewalls or email security gateways.
+- In a real SOC environment, after identifying a potential phishing email, a natural next step would be to enrich the collected indicators (mainly domain and URL) using a tool like **VirusTotal**.  
+- The typical workflow would be to copy the main domain or URL from the email and look it up in VirusTotal to check whether it has already been reported as malicious or suspicious by multiple detection engines, as well as to review detection history, assigned categories (e.g., phishing, malware hosting) and relationships with other IoCs.  
+- This enrichment helps strengthen the incident classification (for example, confirming that it is a known phishing campaign) and supports recommendations to block the domain/URL at proxies, firewalls or email security gateways.
+
+- During the analysis, the URL `http://secureid-support.com/reset` was checked in VirusTotal. At the time of the lookup, **61 detection engines classified the URL as “clean” and 34 had no rating (unrated)**, with no public records marking it as malicious or phishing.
+- However, from a SOC perspective, the email would still be treated as suspicious, because the absence of detection in public feeds does not eliminate risk: the content still shows typical phishing patterns (urgent language, account lock threats and a generic password reset link pointing to an unknown domain). In this case, VirusTotal is used as one more evidence source, while the final decision relies mainly on context and social engineering analysis.
+
+![VirusTotal result](.images/vt-result.png)
 
 ## 🌐 Networking perspective
 
