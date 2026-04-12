@@ -75,7 +75,7 @@ Se este e-mail tivesse sido identificado em um ambiente produtivo, ações recom
 - Durante a análise, a URL `http://secureid-support.com/reset` foi consultada no VirusTotal. No momento da verificação, **61 mecanismos de detecção classificaram a URL como “clean” e 34 não possuíam avaliação (unrated)**, sem registros públicos de classificação como maliciosa ou de phishing.
 - Mesmo assim, em contexto de SOC, o e-mail continuaria sendo tratado como suspeito, pois a ausência de detecção em feeds públicos não elimina o risco: o conteúdo ainda apresenta sinais típicos de phishing (linguagem urgente, ameaça de bloqueio de conta e link genérico de redefinição de senha para um domínio pouco conhecido). Nesse caso, o analista usa o VirusTotal como mais uma fonte de evidência, mas mantém a decisão apoiada principalmente na análise de contexto e de engenharia social.
 
-![Resultado VirusTotal](.images/vt-result.png)
+![Resultado VirusTotal](./images/vt-result.png)
 
 ## 🌐 Perspectiva de rede
 
@@ -154,7 +154,7 @@ If this email had been detected in a production environment, recommended actions
 - During the analysis, the URL `http://secureid-support.com/reset` was checked in VirusTotal. At the time of the lookup, **61 detection engines classified the URL as “clean” and 34 had no rating (unrated)**, with no public records marking it as malicious or phishing.
 - However, from a SOC perspective, the email would still be treated as suspicious, because the absence of detection in public feeds does not eliminate risk: the content still shows typical phishing patterns (urgent language, account lock threats and a generic password reset link pointing to an unknown domain). In this case, VirusTotal is used as one more evidence source, while the final decision relies mainly on context and social engineering analysis.
 
-![VirusTotal result](.images/vt-result.png)
+![VirusTotal result](./images/vt-result.png)
 
 ## 🌐 Networking perspective
 
